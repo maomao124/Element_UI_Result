@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_Result
+  File name(文件名): test6
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/3
+  Time(创建时间)： 20:50
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+    <style>
+        .el-result__icon svg {
+            width: 400px;
+            height: 400px;
+        }
+
+        .el-result__title p {
+            font-size: 2em;
+        }
+
+        .el-button {
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+
+    <el-result icon="error" :title="'错误！错误内容：'+errorMessage">
+        <template slot="icon">
+            <el-image src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png">
+
+            </el-image>
+        </template>
+        <template slot="extra">
+            <el-button type="primary">返回</el-button>
+        </template>
+    </el-result>
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            errorMessage: "其它错误"
+        },
+        methods: {},
+        mounted()
+        {
+
+        }
+    })
+</script>
+</body>
+</html>
