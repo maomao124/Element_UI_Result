@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_Result
+  File name(文件名): test3
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/3
+  Time(创建时间)： 20:37
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+</head>
+<body>
+
+<div id="app">
+
+    <el-result icon="warning" title="警告" subTitle="请根据提示进行操作">
+        <template slot="extra">
+            <el-button type="primary">返回</el-button>
+        </template>
+    </el-result>
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        mounted()
+        {
+
+        }
+    })
+</script>
+</body>
+</html>
